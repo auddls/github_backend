@@ -5,9 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Getter
 @Component
 class MyService {
-    private final MyRepository myRepository; //의존성 추가
+    private final MyRepository myRepository; 
 
-    @Autowired //의존성 주입 , 생성자가 1개일 때는 Autowired 를 생략 할 수 있음
+    @Autowired 
 
     public MyService(MyRepository myRepository) {
         this.myRepository = myRepository;
